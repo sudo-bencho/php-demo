@@ -1,4 +1,5 @@
 # this is test pipeline for php
+# Install Composer using commands
 tasks:
   unit-test:
     runner: razorci/php:7.4
