@@ -1,0 +1,14 @@
+tasks:
+  unit-test:
+    runner: razorci/php:7.4
+    steps:
+    - checkout
+    - commands:
+      - php --version
+      - sudo curl -sS https://getcomposer.org/installer | php
+      - php composer.phar
+      - php composer.phar update --no-scripts
+      - cp .env.example .env
+      - php artisan key:generate
+      - php artisan config:cache
+      - php artisan test
