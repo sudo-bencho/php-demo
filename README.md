@@ -1,4 +1,4 @@
-# task-manager-app
+# Task Manager app
 
 
 ## Laravel Task Manager Application
