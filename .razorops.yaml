@@ -6,6 +6,7 @@ tasks:
     steps:
     - checkout
     - commands:
+      - uptime
       - php --version
       - sudo curl -sS https://getcomposer.org/installer | php
       - php composer.phar
